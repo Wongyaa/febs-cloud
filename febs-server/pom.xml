@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>febs-cloud</artifactId>
+        <groupId>cc.mrbird</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>febs-server</artifactId>
+    <packaging>pom</packaging>
+    <name>FEBS-Server</name>
+    <description>FEBS-Server服务提供模块</description>
+    <modules>
+        <module>febs-server-system</module>
+        <module>febs-server-test</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>cc.mrbird</groupId>
+            <artifactId>febs-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+</project>
