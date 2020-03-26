@@ -3,6 +3,7 @@ package cc.mrbird.febs.auth.configure;
 import cc.mrbird.febs.auth.properties.FebsAuthProperties;
 import cc.mrbird.febs.auth.properties.FebsClientsProperties;
 import cc.mrbird.febs.auth.service.FebsUserDetailService;
+import cc.mrbird.febs.auth.translator.FebsWebResponseExceptionTranslator;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,6 +35,8 @@ public class FebsAuthorizationServerConfigure extends AuthorizationServerConfigu
     private PasswordEncoder passwordEncoder;
     @Autowired
     private FebsAuthProperties authProperties;
+    @Autowired
+    private FebsWebResponseExceptionTranslator exceptionTranslator;
 
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
@@ -61,7 +64,8 @@ public class FebsAuthorizationServerConfigure extends AuthorizationServerConfigu
         endpoints.tokenStore(tokenStore())
                 .userDetailsService(userDetailService)
                 .authenticationManager(authenticationManager)
-                .tokenServices(defaultTokenServices());
+                .tokenServices(defaultTokenServices())
+                .exceptionTranslator(exceptionTranslator);
     }
 
     @Bean

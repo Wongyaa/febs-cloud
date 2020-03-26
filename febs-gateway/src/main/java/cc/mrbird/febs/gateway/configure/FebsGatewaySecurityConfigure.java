@@ -1,4 +1,4 @@
-package cc.mrbird.febs.gateway.oconfigure;
+package cc.mrbird.febs.gateway.configure;
 
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
