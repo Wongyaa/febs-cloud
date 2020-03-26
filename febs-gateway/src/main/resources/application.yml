@@ -22,6 +22,14 @@ zuul:
       path: /auth/**
       serviceId: FEBS-Auth
       sensitiveHeaders: "*"
+    system:
+      path: /system/**
+      serviceId: FEBS-Server-System
+      sensitiveHeaders: "*"
+    test:
+      path: /test/**
+      serviceId: FEBS-Server-Test
+      sensitiveHeaders: "*"
   retryable: true
   ignored-services: "*"
   ribbon:

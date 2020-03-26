@@ -18,5 +18,5 @@ eureka:
 security:
   oauth2:
     resource:
-      id: ${spring.application.name}
+#      id: ${spring.application.name}
       user-info-uri: http://localhost:8301/auth/user
