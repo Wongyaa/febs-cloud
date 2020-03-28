@@ -28,6 +28,6 @@ public class BaseExceptionHandler {
     @ExceptionHandler(value = AccessDeniedException.class)
     @ResponseStatus(HttpStatus.FORBIDDEN)
     public FebsResponse handleAccessDeniedException(){
-        return new FebsResponse().message("没有权限访问该资源");
+        throw new AccessDeniedException("没有权限访问该资源");
     }
 }

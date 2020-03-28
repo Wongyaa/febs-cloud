@@ -12,6 +12,14 @@ import java.io.IOException;
 
 public class FebsAccessDeniedHandler implements AccessDeniedHandler {
 
+    /**
+     * 统一处理没有权限的异常，需要在全局异常处理中重新抛出个该异常
+     *
+     * @param request
+     * @param response
+     * @param accessDeniedException
+     * @throws IOException
+     */
     @Override
     public void handle(HttpServletRequest request, HttpServletResponse response, AccessDeniedException accessDeniedException) throws IOException {
         FebsResponse febsResponse = new FebsResponse();
