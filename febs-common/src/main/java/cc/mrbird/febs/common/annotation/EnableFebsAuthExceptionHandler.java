@@ -1,4 +1,4 @@
-package cc.mrbird.febs.common.comment;
+package cc.mrbird.febs.common.annotation;
 
 import cc.mrbird.febs.common.configure.FebsAuthExceptionConfigure;
 import org.springframework.context.annotation.Import;

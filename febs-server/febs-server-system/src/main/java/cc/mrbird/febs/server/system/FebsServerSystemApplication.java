@@ -1,6 +1,6 @@
 package cc.mrbird.febs.server.system;
 
-import cc.mrbird.febs.common.comment.EnableFebsAuthExceptionHandler;
+import cc.mrbird.febs.common.annotation.FebsCloudApplication;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -9,7 +9,7 @@ import org.springframework.security.config.annotation.method.configuration.Enabl
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableGlobalMethodSecurity(prePostEnabled = true)
-@EnableFebsAuthExceptionHandler
+@FebsCloudApplication
 public class FebsServerSystemApplication {
 
 	public static void main(String[] args) {
