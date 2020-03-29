@@ -40,3 +40,7 @@ zuul:
       disable: true
 ribbon:
   ReadTimeout: 3000
+
+spring:
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration

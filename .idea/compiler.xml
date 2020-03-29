@@ -7,16 +7,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="febs-auth" />
         <module name="febs-common" />
         <module name="febs-gateway" />
         <module name="febs-register" />
+        <module name="febs-server-system" />
+        <module name="febs-server-test" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="febs-auth" target="1.8" />
       <module name="febs-cloud" target="1.8" />
       <module name="febs-common" target="1.8" />
       <module name="febs-gateway" target="1.8" />
       <module name="febs-register" target="1.8" />
+      <module name="febs-server" target="1.8" />
+      <module name="febs-server-system" target="1.8" />
+      <module name="febs-server-test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

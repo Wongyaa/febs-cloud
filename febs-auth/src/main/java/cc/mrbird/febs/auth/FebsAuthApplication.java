@@ -1,6 +1,7 @@
 package cc.mrbird.febs.auth;
 
 import cc.mrbird.febs.common.annotation.FebsCloudApplication;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -8,6 +9,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 @SpringBootApplication
 @EnableDiscoveryClient
 @FebsCloudApplication
+@MapperScan("cc.mrbird.febs.auth.mapper")
 public class FebsAuthApplication {
 
     public static void main(String[] args) {
