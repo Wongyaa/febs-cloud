@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/febs-auth/febs-auth.iml" filepath="$PROJECT_DIR$/febs-auth/febs-auth.iml" />
       <module fileurl="file://$PROJECT_DIR$/febs-cloud.iml" filepath="$PROJECT_DIR$/febs-cloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/febs-common/febs-common.iml" filepath="$PROJECT_DIR$/febs-common/febs-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/febs-gateway/febs-gateway.iml" filepath="$PROJECT_DIR$/febs-gateway/febs-gateway.iml" />

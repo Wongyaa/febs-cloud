@@ -2,9 +2,12 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/febs-auth" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/febs-common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/febs-gateway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/febs-register" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/febs-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/febs-server/febs-server-system" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/febs-server/febs-server-test" charset="UTF-8" />
   </component>
 </project>
