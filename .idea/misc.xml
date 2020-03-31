@@ -13,7 +13,6 @@
     </option>
     <option name="ignoredFiles">
       <set>
-        <option value="$PROJECT_DIR$/febs-auth/pom.xml" />
         <option value="$PROJECT_DIR$/febs-server/pom.xml" />
       </set>
     </option>
