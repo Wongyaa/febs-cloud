@@ -4,6 +4,8 @@ server:
 spring:
   application:
     name: FEBS-Gateway
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
 
 eureka:
   instance:
@@ -40,7 +42,3 @@ zuul:
       disable: true
 ribbon:
   ReadTimeout: 3000
-
-spring:
-  autoconfigure:
-    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
