@@ -27,6 +27,7 @@ public class FebsServerTestResourceServerConfigure extends ResourceServerConfigu
                 .requestMatchers().antMatchers("/**")
                 .and()
                 .authorizeRequests()
+                .antMatchers("/actuator/**").permitAll()
                 .antMatchers("/**").authenticated();
     }
 

@@ -13,6 +13,7 @@
         <module>febs-auth</module>
         <module>febs-gateway</module>
         <module>febs-server</module>
+        <module>febs-monitor</module>
     </modules>
     <packaging>pom</packaging>
 
